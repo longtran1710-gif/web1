@@ -9,7 +9,7 @@
 <body>
     <div class="cart-container">
         <div class="cart-items-list">
-            <h2>🛍️ Giỏ Hàng Của Bạn</h2>
+            <h2> Giỏ Hàng Của Bạn</h2>
             <div class="cart-item" data-unit-price="3500000">
                 <div class="item-details">
                     <div class="item-image" style="background-image: url('placeholder-sp1.jpg'); background-size: cover;"></div>
@@ -19,7 +19,11 @@
                     </div>
                 </div>
                 <div class="item-quantity">
-                    <input type="number" value="1" min="1" class="quantity-input" data-item-name="Laptop Asus X289">
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus-btn" data-action="minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input" data-item-name="Laptop Asus X289">
+                        <button class="quantity-btn plus-btn" data-action="plus">+</button>
+                    </div>
                 </div>
                 <div class="item-total">
                     <p class="subtotal-display">3.500.000₫</p>
@@ -35,7 +39,11 @@
                     </div>
                 </div>
                 <div class="item-quantity">
-                    <input type="number" value="2" min="1" class="quantity-input" data-item-name="Macbook Pro M1">
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus-btn" data-action="minus">-</button>
+                        <input type="number" value="2" min="1" class="quantity-input" data-item-name="Macbook Pro M1">
+                        <button class="quantity-btn plus-btn" data-action="plus">+</button>
+                    </div>
                 </div>
                 <div class="item-total">
                     <p class="subtotal-display">2.500.000₫</p>
@@ -45,7 +53,11 @@
             <a href="#" class="continue-shopping">Tiếp tục mua sắm</a>
         </div> 
         <div class="cart-summary">
-            <h3>📝 Tổng Kết Đơn Hàng</h3>
+            <h3> Tổng Kết Đơn Hàng</h3>
+            <div class="summary-address">
+                <label for="shipping-address-input">Địa chỉ giao hàng:</label>
+                <input type="text" id="shipping-address-input" value=""> 
+            </div>
             <div class="summary-details">
                 <div>
                     <span>Tạm tính (<span id="total-items-count">3</span> sản phẩm):</span>
