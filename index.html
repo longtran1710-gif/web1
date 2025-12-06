@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng Của Bạn</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="cart-container">
+        <div class="cart-items-list">
+            <h2>🛍️ Giỏ Hàng Của Bạn</h2>
+            <div class="cart-item" data-unit-price="3500000">
+                <div class="item-details">
+                    <div class="item-image" style="background-image: url('placeholder-sp1.jpg'); background-size: cover;"></div>
+                    <div class="item-info">
+                        <a href="#">Laptop Asus X289</a>
+                        <p class="unit-price">Giá đơn vị: <span>3.500.000₫</span></p>
+                    </div>
+                </div>
+                <div class="item-quantity">
+                    <input type="number" value="1" min="1" class="quantity-input" data-item-name="Laptop Asus X289">
+                </div>
+                <div class="item-total">
+                    <p class="subtotal-display">3.500.000₫</p>
+                </div>
+                <button class="remove-btn">Xóa</button>
+            </div>
+            <div class="cart-item" data-unit-price="1250000">
+                <div class="item-details">
+                    <div class="item-image" style="background-image: url('placeholder-sp2.jpg'); background-size: cover;"></div>
+                    <div class="item-info">
+                        <a href="#">Macbook Pro M1 </a>
+                        <p class="unit-price">Giá đơn vị: <span>1.250.000₫</span></p>
+                    </div>
+                </div>
+                <div class="item-quantity">
+                    <input type="number" value="2" min="1" class="quantity-input" data-item-name="Macbook Pro M1">
+                </div>
+                <div class="item-total">
+                    <p class="subtotal-display">2.500.000₫</p>
+                </div>
+                <button class="remove-btn">Xóa</button>
+            </div>
+            <a href="#" class="continue-shopping">Tiếp tục mua sắm</a>
+        </div> 
+        <div class="cart-summary">
+            <h3>📝 Tổng Kết Đơn Hàng</h3>
+            <div class="summary-details">
+                <div>
+                    <span>Tạm tính (<span id="total-items-count">3</span> sản phẩm):</span>
+                    <span id="subtotal-display-summary">6.000.000₫</span>
+                </div>
+                <div>
+                    <span>Giảm giá (<span id="promo-code-used"></span>):</span>
+                    <span id="discount-display" style="color: var(--danger-color);">- 0₫</span>
+                </div>
+                <div>
+                    <span>Phí vận chuyển:</span>
+                    <span id="shipping-fee" style="color: var(--accent-color);">Miễn phí</span>
+                </div>
+            </div>
+            <div class="summary-promo">
+                <input type="text" id="promo-input" placeholder="Nhập mã giảm giá">
+                <button id="apply-promo-btn">Áp dụng</button>
+            </div>
+            <div class="summary-total">
+                <span>Tổng cộng:</span>
+                <span id="final-total-display" class="final-total">6.000.000₫</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">TIẾN HÀNH THANH TOÁN</button>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
